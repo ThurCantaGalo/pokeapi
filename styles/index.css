@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     /*background-color: rgb(221, 239, 255);*/
-    background-image: url("./../assets/dex.png");
+    background-image: url("./../assets/pokemon4.jpg");
+    background-size: cover;
     
 }
 
@@ -26,20 +27,21 @@ main {
 }
 
 main #pokedex {
-    background-color: rgb(201, 37, 37);
-    width: 450px;
-    height: 600px;
+    background-color: rgb(255, 255, 255);
+    width: 480px;
+    height: 730px;
     border-radius: 15px;
     border: 2px solid rgb(0, 0, 0);
     box-shadow: 6px 5px 10px 0px rgba(0, 0, 0, 0.575);
 }
 
 main #pokedex #visor {
-    background-color: #b9ffc2;
+    background: rgb(215,187,238);
+background: linear-gradient(0deg, rgba(215,187,238,1) 0%, rgba(255,255,255,1) 66%);
     border: 2px solid #ccc;
     border-radius: 15px;
-    width: 400px;
-    height: 350px;
+    width: 430px;
+    height: 530px;
     margin: 15px auto;
     text-align: center;
 }
@@ -53,7 +55,7 @@ main #pokedex .form-floating {
 
 main #pokedex button {
     width: 420px;
-    margin-left: 13px;
+    margin-left: 28px;
     border: 2px solid rgb(0, 0, 0);
 }
 
