@@ -42,6 +42,19 @@ document.addEventListener("DOMContentLoaded", function(){
             divPes.classList.add("container-peso");
             divPes.innerHTML = `<p>Peso: ${data.weight/10}kg</p>`;
             visor.appendChild(divPes);
+         
+            for(var i = 0; i < data.stats.length; i++){
+            const divStatus = document.createElement("div");
+            divStatus.classList.add("container-status");
+
+            const divPoder = data.stats[i].base_stat;
+            const divNoPor = data.stats[i].stat.name;
+
+            divStatus.innerHTML = `<p>${divNoPor} : ${divPoder}</p>`;
+            visor.appendChild(divStatus);
+
+            }
+         
          })
 
       .catch(error =>{
